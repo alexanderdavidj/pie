@@ -1,6 +1,6 @@
 [project]
 name = "pie"
-version = "1.0"
+version = "18"
 authors = [
     {   name="Alexander David", email="alexander-david-dev@yandex.com" },
 ]

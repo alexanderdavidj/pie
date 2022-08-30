@@ -4,7 +4,7 @@ from PIL import Image
 import argparse
 import os.path
 
-__version__ = "1.0"
+__version__ = "18"
 
 def convertbytes(bytes):
     for i in ["bytes", "KB", "MB", "GB", "TB"]:
@@ -28,7 +28,7 @@ def main():
     parser.add_argument("-v", "--verbose", action="store_true",
                         required=False, default=False, help="Enable verbose mode")
     parser.add_argument("--version", action="version",
-                        version="%(prog)s " + __version__)
+                        version="%(prog)s v" + __version__)
 
     args = parser.parse_args()
 
