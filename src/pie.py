@@ -4,7 +4,7 @@ from PIL import Image
 import argparse
 import os.path
 
-__version__ = "0.0.0"
+__version__ = "1.0"
 
 def convertbytes(bytes):
     for i in ["bytes", "KB", "MB", "GB", "TB"]:
