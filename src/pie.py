@@ -14,7 +14,7 @@ def convertbytes(bytes):
         
 def main():
     parser = argparse.ArgumentParser(
-        prog="ppy", description="Process an image's pixels")
+        prog="pie", description="Process an image's pixels")
     parser.add_argument("-f", "--file", type=str,
                         required=True, help="Path to image file")
     parser.add_argument("-o", "--out", type=str, required=False,
@@ -34,7 +34,7 @@ def main():
 
     def debug(message):
         if (args.verbose):
-            print("[ppy] %s" % message)
+            print("[pie] %s" % message)
 
     def format(p1, p2, rgb):
         array = [rgb[0], rgb[1], rgb[2], "%d%s%d" % (p1, args.div, p2)]
