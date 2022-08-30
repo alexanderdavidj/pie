@@ -4,7 +4,7 @@ pie is a tool for easy pixel color extraction made in Python
 
 ## Temporary install
 
-Currently, I've opened an [issue]([PEP 541 Request: pie · Issue #2195 · pypa/pypi-support · GitHub](https://github.com/pypa/pypi-support/issues/2195)) on the PyPi GitHub to claim the name pie on PyPi as the current project page is abandoned. Meanwhile, use this command to install pie:
+Currently, I've opened an [issue](https://github.com/pypa/pypi-support/issues/2195) on the PyPi GitHub to claim the name pie on PyPi as the current project page is abandoned. Meanwhile, use this command to install pie:
 
 ```bash
 python3 -m pip install git+https://github.com/alexzerozeroone/pie
