@@ -1,0 +1,20 @@
+[project]
+name = "pie"
+version = "0.0.0"
+authors = [
+    {   name="Alexander David", email="alexander-david-dev@yandex.com" },
+]
+
+description = "Process image file's pixels into a text file"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/alexzerozeroone/pie"
+"Bug Tracker" = "https://github.com/alexzerozeroone/pie/issues"
