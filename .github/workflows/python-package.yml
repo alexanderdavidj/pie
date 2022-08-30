@@ -33,22 +33,13 @@ jobs:
       with:
         name: package
         path: dist
-    - name: Bump version and push tag
-      id: create_tag
-      uses: laputansoft/github-tag-action@v4.6
-      with:
-        github_token: ${{ env.GITHUB_TOKEN }}
-        tag: v${{ github.run_number }}
-    - name: Test tag creation
-      run: |
-        echo ${{ steps.create_tag.new_tag }}
     - name: Create Release
       id: create_release
       uses: actions/create-release@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: ${{ steps.create_tag.new_tag }}
+        tag_name: workflow-release
         release_name: Release ${{ github.run_number }}
         body: |
           Release ${{ github.run_number }}
