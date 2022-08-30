@@ -33,6 +33,12 @@ jobs:
       with:
         name: package
         path: dist
+    - name: Bump version and push tag
+      id: create_tag
+      uses: laputansoft/github-tag-action@v4.6
+      with:
+        github_token: ${{ env.GITHUB_TOKEN }}
+        tag: v${{ github.run_numbeR }}
     - name: Create Release
       id: create_release
       uses: actions/create-release@v1
@@ -40,7 +46,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         release_name: Release ${{ github.run_number }}
-        tag_name: v${{ github.run_number }}
+        tag_name: ${{ steps.create_tag.new_tag }}
         body: |
           Release ${{ github.run_number }}
           Release commit change: "${{ github.event.head_commit.message }}"
